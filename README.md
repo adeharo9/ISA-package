@@ -19,6 +19,21 @@ This function models the **International Standard Atmosphere (ISA)** between 0 a
 	P --> Pressure (Pa)  
 	rho --> Density (kg/m^3)  
 
+##altitudeCalc.m
+
+**Altitude Calculation Function**  
+This function calculates the altitude in which the condition stablished as a parameter is correct.
+
+###INPUTS
+	n --> String which can be:
+		'T' --> The parameter is a temperature (K).
+		'P' --> The parameter is a pressure (Pa).
+		'rho' --> The parameter is a density (kg/m^3).
+	v --> Value of n in the units specified above (IS).
+
+###OUTPUTS
+	d --> Altitude in m that matches the specified condition.
+
 ##ISA_P.m
 
 **Pressure Calculation Function for the International Standard Atmosphere (ISA)**  
@@ -51,21 +66,6 @@ This function calculates the temperature at a specified altitude.
 
 ###OUTPUTS
 	T --> Temperature (K)
-
-##altitudeCalc.m
-
-**Altitude Calculation Function**  
-This function calculates the altitude in which the condition stablished as a parameter is correct.
-
-###INPUTS
-	n --> String which can be:
-		'T' --> The parameter is a temperature (K).
-		'P' --> The parameter is a pressure (Pa).
-		'rho' --> The parameter is a density (kg/m^3).
-	v --> Value of n in the units specified above (IS).
-
-###OUTPUTS
-	d --> Altitude in m that matches the specified condition.
 
 ##parmCalc.m
 **Parameter function for ISA parameters**  
