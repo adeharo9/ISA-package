@@ -41,6 +41,6 @@ elseif z<47000                                                            %m
     rho=rho25000*(T/T25000).^(-g*M/(R*lambda)-1);                         %kg/m^3
 %--------------------------------------------------------------------------
 else
-    disp('Error. This function only calculates T,P and rho for h<47000m');
+    error('Error. This function only calculates T,P and rho for h<47000m');
 end
 end

@@ -45,7 +45,7 @@ if strcmp(n,'T')
     elseif a<11000&&a>=0                                                  %m
         d(1)=a;                                                           %m
     else
-        disp('Error. No altitude matches the specified conditions.');
+        error('Error. No altitude matches the specified conditions.');
     end
     if c<47000&&c>25000                                                   %m
         d(2)=c;                                                           %m
@@ -83,7 +83,7 @@ elseif strcmp(n,'P')
     elseif c<47000&&c>=25000                                              %m
         d=c;                                                              %m
     else
-        disp('Error. No altitude matches the specified conditions.');
+        error('Error. No altitude matches the specified conditions.');
     end
     
 %-------------------- DENSITY ---------------------------------------------
@@ -118,9 +118,9 @@ elseif strcmp(n,'rho')
     elseif c<47000&&c>=25000                                              %m
         d=c;                                                              %m
     else
-        disp('Error. No altitude matches the specified conditions.');
+        error('Error. No altitude matches the specified conditions.');
     end
 else
-    disp('Incorrect parameter. Check the function code for more information.');
+    error('Incorrect parameter. Check the function code for more information.');
 end
 end
