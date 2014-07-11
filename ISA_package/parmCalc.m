@@ -2,14 +2,14 @@
 %This function returns the value of the parameters used in the ISA
 %equations as function of altitude.
 %
-%INPUTS
-%   z --> Altitude (m).
+%INPUT DATA
+%   z --> Altitude (m)
 %
-%OUTPUTS
-%   lambda --> Temperature gradient (K/m).
-%   T --> Reference temperature at a specified altitude (K).
-%   P --> Reference pressure at a specified altitude (P).
-%   rho --> Reference density at a specified altitude (kg/m^3).
+%OUTPUT DATA
+%   lambda --> Temperature gradient (K/m)
+%   T --> Reference temperature at a specified altitude (K)
+%   P --> Reference pressure at a specified altitude (P)
+%   rho --> Reference density at a specified altitude (kg/m^3)
                                                                           %Units
 function [lambda,T,P,rho]=parmCalc(z)
 %-------------------- TROPOSPHERE -----------------------------------------

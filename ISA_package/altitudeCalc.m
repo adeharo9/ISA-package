@@ -2,15 +2,15 @@
 %This function calculates the altitude in which the condition stablished as
 %a parameter is correct.
 %
-%INPUTS
+%INPUT DATA
 %   n --> String which can be:
-%       'T' --> The parameter is a temperature (K).
-%       'P' --> The parameter is a pressure (Pa).
-%       'rho' --> The parameter is a density (kg/m^3).
-%   v --> Value of n in the units specified above (IS).
+%       'T' --> The parameter is a temperature (K)
+%       'P' --> The parameter is a pressure (Pa)
+%       'rho' --> The parameter is a density (kg/m^3)
+%   v --> Value of n in the units specified above (IS)
 %
-%OUTPUTS
-%   d --> Altitude in m that matches the specified condition.
+%OUTPUT DATA
+%   d --> Altitude in m that matches the specified condition
                                                                           %Units
 function [d]=altitudeCalc(n,v)
 %-------------------- GLOBAL CONSTANTS ------------------------------------

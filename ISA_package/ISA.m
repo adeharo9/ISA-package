@@ -2,13 +2,13 @@
 %This function models the International Standard Atmosphere (ISA) between 0
 %and 47000 m from the surface.
 %
-%INPUTS
-%   z --> Altitude (m).
+%INPUT DATA
+%   z --> Altitude (m)
 %
-%OUTPUTS
-%   T --> Temperature (K).
-%   P --> Pressure (Pa).
-%   rho --> Density (kg/m^3).
+%OUTPUT DATA
+%   T --> Temperature (K)
+%   P --> Pressure (Pa)
+%   rho --> Density (kg/m^3)
                                                                           %Units
 function [T,P,rho]=ISA(z)
 %-------------------- GLOBAL CONSTANTS ------------------------------------
